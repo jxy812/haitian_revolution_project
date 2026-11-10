@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="An interactive history exhibition exploring the Haitian Revolution, the French indemnity, and the meaning of freedom.">
+
+    <title>Haiti | Freedom at a Price</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="data.js" defer></script>
+
+    <script src="script.js" defer></script>
+
+</head>
+
+
+
+<body>
+
+    <a class="skip" href="#history">Skip to the exhibition</a>
+
+    <header>
+
+        <nav aria-label="Exhibition"><a class="brand" href="#home">H / <span>1804</span></a>
+
+            <div class="nav-links"><a href="#history">01 Origins</a><a href="#revolution">02 Timeline</a><a href="#leadership">03 People</a><a href="#struggles">04 Struggles</a><a href="#sacrifice">05
+
+                    Indemnity</a><a href="#legacy">06 Legacy</a><a href="#sources">Sources ↗</a></div>
+
+        </nav>
+
+        <div class="reading-progress" aria-hidden="true"></div>
+
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-top">
+
+                <p class="eyebrow">A DIGITAL HISTORY EXHIBITION</p>
+
+                <p class="eyebrow">SAINT-DOMINGUE → HAITI</p>
+
+            </div>
+
+            <h1>HAITI<span>.</span></h1>
+
+            <div class="hero-bottom">
+
+                <div>
+
+                    <p class="hero-subtitle">Freedom<br>at a Price</p>
+
+                    <p class="hero-description">The people who overturned slavery.<br>The independence the world made
+
+                        them pay for.</p><a class="explore" href="#history">ENTER THE EXHIBITION <span>↘</span></a>
+
+                </div>
+
+                <div class="hero-years">
+
+                    <p>1791 <span>REVOLT</span></p>
+
+                    <p>1804 <span>INDEPENDENCE</span></p>
+
+                    <p>1825 <span>INDEMNITY</span></p>
+
+                </div>
+
+            </div>
+
+            <p class="hero-foot">AN EXHIBITION BY JESSIE XIE <span>SCROLL TO EXPLORE ↓</span></p>
+
+        </section>
+
+        <div class="thesis">
+
+            <p class="eyebrow">THE QUESTION THAT GUIDES THIS EXHIBITION</p>
+
+            <h2>To what extent did the Haitian Revolution shape Haiti’s challenges and identity today?</h2>
+
+            <p>To a profound, but not total, extent. The revolution made emancipation and Black sovereignty central to
+
+                Haiti’s identity. The international response—especially France’s indemnity—restricted the resources
+
+                available to turn independence into lasting economic security. That history shaped Haiti’s choices
+
+                without determining every later outcome.</p>
+
+        </div>
+
+        <section class="exhibit" id="history">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">01 / THE ORIGINS</p>
+
+                <h2>A society<br><em>divided.</em></h2>
+
+                <p>France’s profitable sugar and coffee colony occupied the western part of Hispaniola. Its wealth
+
+                    depended on enslaved labor. Race, class, and legal status shaped who could claim rights—and who paid
+
+                    for prosperity. <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a> <a href="#source-state" aria-label="Source: Office of the Historian">(Office of the Historian)</a></span></p>
+
+            </div>
+
+            <div class="social-grid">
+
+                <article class="social-card"><span class="card-number">01</span>
+
+                    <p class="eyebrow">Wealthy white planters &amp; merchants</p>
+
+                    <h3>Grands blancs</h3>
+
+                    <p>They held economic power through plantations and trade. Their conflicts with French officials did
+
+                        not make them allies of emancipation.</p>
+
+                </article>
+
+                <article class="social-card"><span class="card-number">02</span>
+
+                    <p class="eyebrow">Less wealthy white colonists</p>
+
+                    <h3>Petits blancs</h3>
+
+                    <p>Artisans, shopkeepers, and overseers could resent wealthy planters yet defend a racial hierarchy
+
+                        that gave them advantages.</p>
+
+                </article>
+
+                <article class="social-card"><span class="card-number">03</span>
+
+                    <p class="eyebrow">Gens de couleur libres</p>
+
+                    <h3>Free people of color</h3>
+
+                    <p>Racial discrimination restricted their opportunities despite freedom, and sometimes considerable
+
+                        wealth. Political goals varied within the group.</p>
+
+                </article>
+
+                <article class="social-card"><span class="card-number">04</span>
+
+                    <p class="eyebrow">African-born &amp; locally born majority</p>
+
+                    <h3>Enslaved people</h3>
+
+                    <p>They were political actors who organized resistance. Their struggle pushed the revolution beyond
+
+                        reforms intended only for people already free.</p>
+
+                </article>
+
+            </div>
+
+            <div class="interactive-block">
+
+                <p class="eyebrow">EXPLORE / COMPETING INTERESTS</p>
+
+                <h3>Everyone wanted change.<br>They did not want the same change.</h3>
+
+                <div class="button-row" aria-label="Choose a social group"><button data-group="0" aria-pressed="true">Grands blancs</button><button data-group="1" aria-pressed="false">Petits
+
+                        blancs</button><button data-group="2" aria-pressed="false">Free people of color</button><button data-group="3" aria-pressed="false">Enslaved people</button></div>
+
+                <div id="group-panel" aria-live="polite">
+
+                    <h4>Could colonial autonomy preserve slavery?</h4>
+
+                    <div class="two-col">
+
+                        <p><strong>What they wanted</strong><span id="group-goal">Greater political and economic
+
+                                autonomy from France while protecting plantation wealth and slavery.</span></p>
+
+                        <p><strong>Where conflict emerged</strong><span id="group-conflict">Their demand for liberty could mean less control from France while keeping enslaved workers under their own control.</span></p>
+
+                    </div>
+
+                </div>
+
+                <p class="small">These categories describe broad social positions, not identical beliefs held by every
+
+                    person. Based on the project organizer and <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a></span>.</p>
+
+            </div>
+
+            <div class="causes">
+
+                <h3>The road to revolution</h3>
+
+                <div class="three-col">
+
+                    <article><span>01 / SOCIAL</span>
+
+                        <h4>A hierarchy enforced by race</h4>
+
+                        <p>Enslavement denied the majority control of their lives. Free people of color faced
+
+                            discrimination despite their legal freedom. Less wealthy whites could defend racial
+
+                            privilege even while challenging wealthy planters.</p>
+
+                    </article>
+
+                    <article><span>02 / POLITICAL</span>
+
+                        <h4>Universal rights, selective application</h4>
+
+                        <p>The Enlightenment and France’s 1789 revolution supplied a language of liberty and equality.
+
+                            Colonial factions fought over its meaning. The exclusion of enslaved people exposed the
+
+                            contradiction in proclaiming rights while preserving bondage.</p>
+
+                    </article>
+
+                    <article><span>03 / ECONOMIC</span>
+
+                        <h4>Prosperity built on coercion</h4>
+
+                        <p>Sugar and coffee exports enriched owners through forced labor. Preserving plantation profits
+
+                            conflicted with workers’ demands for freedom and control of land. Colonial wealth was never
+
+                            the same thing as shared prosperity.</p>
+
+                    </article>
+
+                </div><span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class
+
+                        timeline)</a></span>
+
+            <div class="evidence-reading"><p class="eyebrow">WHY THESE CAUSES COMBINED</p><h3>Different demands weakened the same colonial system.</h3><p>White colonists’ disputes with France weakened agreement over who should govern. Free people of color challenged the idea that citizenship belonged only to whites. The enslaved majority challenged the labor system that both groups could profit from. These conflicts overlapped, but their goals were not interchangeable: winning a vote did not free an enslaved worker, and replacing French officials did not end slavery.</p><p>The French Revolution helped open a political crisis. Enslaved people used that opening, along with their own networks and resistance, to demand changes that French officials and many free colonists had not intended. That explains why the conflict became more radical than a dispute over colonial representation. <span class="citation"><a href="#source-class">(Class timeline)</a> <a href="#source-eddins">(Eddins 277–81)</a></span></p></div></div>
+
+            <details class="research-detail">
+
+                <summary>Was freedom simply an idea imported from France?</summary>
+
+                <p>No. African political and spiritual traditions, maroon communities, and networks across plantations
+
+                    also sustained resistance. Eddins emphasizes the initiative of enslaved people and fugitives. Bois
+
+                    Caïman symbolizes that collective organization, although the ceremony’s precise date, location, and
+
+                    reported words remain debated. The revolution cannot be explained as France giving liberty to
+
+                    passive recipients. <span class="citation"><a href="#source-eddins" aria-label="Source: Eddins 277–81">(Eddins 277–81)</a></span></p>
+
+                <p>Cotard and Dubois begin their illustrated history with the Middle Passage and the participation of
+
+                    enslaved women and men. That perspective connects the uprising to people’s own experiences of
+
+                    enslavement and collective resistance, rather than only to decisions made in Paris. <span class="citation"><a href="#source-nib" aria-label="Source: Cotard and Dubois">(Cotard and
+
+                            Dubois)</a></span></p>
+
+            </details>
+
+        </section>
+
+        <section class="exhibit" id="revolution">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">02 / THE REVOLUTION UNFOLDS</p>
+
+                <h2>History<br><em>in motion.</em></h2>
+
+                <p>A multi-sided conflict, with shifting alliances. Follow the turning points, then explore the places
+
+                    where revolutionary change became real.</p>
+
+            </div>
+
+            <div class="timeline-strip" aria-label="Choose a timeline event"><button data-event="0" aria-pressed="true"><span>1789</span><small>01</small></button><button data-event="1" aria-pressed="false"><span>August 1791</span><small>02</small></button><button data-event="2" aria-pressed="false"><span>4 April 1792</span><small>03</small></button><button data-event="3" aria-pressed="false"><span>29 August 1793</span><small>04</small></button><button data-event="4" aria-pressed="false"><span>4 February 1794</span><small>05</small></button><button data-event="5" aria-pressed="false"><span>July 1801</span><small>06</small></button><button data-event="6" aria-pressed="false"><span>1802</span><small>07</small></button><button data-event="7" aria-pressed="false"><span>18 November 1803</span><small>08</small></button><button data-event="8" aria-pressed="false"><span>1 January 1804</span><small>09</small></button><button data-event="9" aria-pressed="false" class="aftermath"><span>17 April 1825</span><small>AFTERMATH</small></button>
+
+            </div>
+
+            <div class="timeline-body">
+
+                <div class="timeline-symbol" aria-hidden="true"><span id="event-count">01</span>
+
+                    <p>OF 10<br>TURNING POINTS</p>
+
+                </div>
+
+                <div class="event-content" aria-live="polite">
+
+                    <article class="event-record" id="event-0">
+
+                        <p class="eyebrow">TURNING POINT / 01</p>
+
+                        <p class="event-date">1789</p>
+
+                        <h3>Rights proclaimed. Rights contested.</h3>
+
+                        <p class="event-meta">Paris → Saint-Domingue<br><strong>People:</strong> King Louis XVI; Marquis de Lafayette; French National Assembly; competing colonial groups</p><p>As France’s revolution challenged Louis XVI’s monarchy, debates over rights spread to Saint-Domingue. Lafayette proposed a declaration of rights; the National Assembly adopted the Declaration of the Rights of Man and of the Citizen on 26 August 1789. Colonial groups disagreed over who should benefit.</p>
+
+                        <p class="why"><strong>Why it matters</strong> Universal rights became an argument against
+
+                            racial exclusion, but did not immediately end slavery.</p><span class="citation"><a href="#source-class">(Class timeline)</a> <a href="#source-declaration">(Library of Congress, “Declaration Legacy”)</a></span></article>
+
+                    <article class="event-record" id="event-1" hidden>
+
+                        <p class="eyebrow">TURNING POINT / 02</p>
+
+                        <p class="event-date">August 1791</p>
+
+                        <h3>The enslaved majority rises.</h3>
+
+                        <p class="event-meta">Northern plain, near Cap-Français<br><strong>People:</strong> Dutty
+
+                            Boukman; Georges Biassou; Jean-François Papillon; thousands of insurgents</p>
+
+                        <p>A coordinated uprising attacked the plantation system in northern Saint-Domingue. Enslaved
+
+                            people turned long-standing resistance into a large military and political challenge.</p>
+
+                        <p class="why"><strong>Why it matters</strong> Freedom would be fought for by enslaved people
+
+                            themselves. The struggle could no longer be confined to disputes among free colonists.</p>
+
+                        <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class
+
+                                timeline)</a> <a href="#source-eddins" aria-label="Source: Eddins 277–81">(Eddins
+
+                                277–81)</a></span>
+
+                    </article>
+
+                    <article class="event-record" id="event-2" hidden>
+
+                        <p class="eyebrow">TURNING POINT / 03</p>
+
+                        <p class="event-date">4 April 1792</p>
+
+                        <h3>Citizenship expands. Slavery remains.</h3>
+
+                        <p class="event-meta">France and its colonies<br><strong>People:</strong> French Legislative
+
+                            Assembly; Julien Raimond; free men of color</p>
+
+                        <p>France granted equal political rights to free men of color. Commissioners, including
+
+                            Sonthonax and Polverel, came to enforce the new policy.</p>
+
+                        <p class="why"><strong>Why it matters</strong> This attacked racial exclusion among free men,
+
+                            while leaving the enslaved majority outside citizenship. One revolutionary goal did not
+
+                            resolve the others.</p><span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a></span>
+
+                    </article>
+
+                    <article class="event-record" id="event-3" hidden>
+
+                        <p class="eyebrow">TURNING POINT / 04</p>
+
+                        <p class="event-date">29 August 1793</p>
+
+                        <h3>Emancipation in the north.</h3>
+
+                        <p class="event-meta">Northern Saint-Domingue<br><strong>People:</strong> Léger-Félicité
+
+                            Sonthonax; Étienne Polverel; insurgents</p>
+
+                        <p>Sonthonax proclaimed general emancipation in the north as French authority faced internal
+
+                            conflict and foreign invasion. Polverel extended emancipation in other regions.</p>
+
+                        <p class="why"><strong>Why it matters</strong> Insurgent pressure and the need for military
+
+                            allies helped turn a French mission to restore order into a break with slavery.</p><span class="citation"><a href="#source-shen" aria-label="Source: Shen, “Upheavals”">(Shen,
+
+                                “Upheavals”)</a></span>
+
+                    </article>
+
+                    <article class="event-record" id="event-4" hidden>
+
+                        <p class="eyebrow">TURNING POINT / 05</p>
+
+                        <p class="event-date">4 February 1794</p>
+
+                        <h3>France abolishes colonial slavery.</h3>
+
+                        <p class="event-meta">Paris; French colonies<br><strong>People:</strong> National Convention; Louis-Pierre Dufay; Jean-Baptiste Belley; Jean-Baptiste Mills; Georges Danton</p><p>The National Convention abolished slavery in France’s colonies. Saint-Domingue’s deputies brought the colonial struggle into French politics; Dufay spoke in the debate and Danton supported abolition. In May, Louverture left his Spanish alliance and joined the French republican forces.</p>
+
+                        <p class="why"><strong>Why it matters</strong> The relationship worked in both directions:
+
+                            revolutionary ideas influenced Saint-Domingue, and the colonial uprising transformed French
+
+                            policy.</p><span class="citation"><a href="#source-class">(Class timeline)</a> <a href="#source-shen">(Shen, “Upheavals”)</a> <a href="#source-assembly">(Assemblée nationale)</a></span></article>
+
+                    <article class="event-record" id="event-5" hidden>
+
+                        <p class="eyebrow">TURNING POINT / 06</p>
+
+                        <p class="event-date">July 1801</p>
+
+                        <h3>Free—and still formally French.</h3>
+
+                        <p class="event-meta">Saint-Domingue<br><strong>People:</strong> Toussaint Louverture;
+
+                            constitutional assembly</p>
+
+                        <p>Louverture’s constitution maintained abolition and claimed broad autonomy while keeping a
+
+                            formal connection to France. He became governor for life; compulsory plantation labor
+
+                            continued.</p>
+
+                        <p class="why"><strong>Why it matters</strong> This was not a declaration of independence.
+
+                            Abolition, political authority, and workers’ freedom to control labor remained contested.
+
+                        </p><span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class
+
+                                timeline)</a> <a href="#source-power" aria-label="Source: Shen, “Louverture”">(Shen,
+
+                                “Louverture”)</a></span>
+
+                    </article>
+
+                    <article class="event-record" id="event-6" hidden>
+
+                        <p class="eyebrow">TURNING POINT / 07</p>
+
+                        <p class="event-date">1802</p>
+
+                        <h3>French reconquest threatens freedom.</h3>
+
+                        <p class="event-meta">Saint-Domingue; deportation to France<br><strong>People:</strong> Napoleon
+
+                            Bonaparte; Charles Leclerc; Louverture; Dessalines</p>
+
+                        <p>Napoleon sent Leclerc’s expedition to restore French control. Louverture was arrested and
+
+                            deported in June. Slavery’s restoration in Guadeloupe and attempts to disarm Black troops
+
+                            deepened fears of re-enslavement.</p>
+
+                        <p class="why"><strong>Why it matters</strong> Dessalines and other commanders briefly served
+
+                            the French before rejoining resistance. Independence increasingly became a way to secure
+
+                            emancipation.</p><span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a></span>
+
+                    </article>
+
+                    <article class="event-record" id="event-7" hidden>
+
+                        <p class="eyebrow">TURNING POINT / 08</p>
+
+                        <p class="event-date">18 November 1803</p>
+
+                        <h3>Victory at Vertières.</h3>
+
+                        <p class="event-meta">Near Cap-Français<br><strong>People:</strong> Jean-Jacques Dessalines;
+
+                            François Capois; French commander Rochambeau</p>
+
+                        <p>Revolutionary forces defeated the French at Vertières, helping force the evacuation of the
+
+                            remaining French expedition.</p>
+
+                        <p class="why"><strong>Why it matters</strong> Haitian military organization and resistance were
+
+                            decisive. Yellow fever and, later, Britain’s naval pressure also weakened the French
+
+                            expedition.</p><span class="citation"><a href="#source-embassy" aria-label="Source: Embassy of Haiti">(Embassy of Haiti)</a> <a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a></span>
+
+                    </article>
+
+                    <article class="event-record" id="event-8" hidden>
+
+                        <p class="eyebrow">TURNING POINT / 09</p>
+
+                        <p class="event-date">1 January 1804</p>
+
+                        <h3>Haiti declares independence.</h3>
+
+                        <p class="event-meta">Gonaïves<br><strong>People:</strong> Jean-Jacques Dessalines and the
+
+                            independence army</p>
+
+                        <p>Dessalines proclaimed independence and the name Haiti replaced Saint-Domingue. The victorious
+
+                            revolution ended French colonial rule in the west of Hispaniola.</p>
+
+                        <p class="why"><strong>Why it matters</strong> A society built on racial slavery became an
+
+                            independent Black state. The victory made self-emancipation a challenge to the wider
+
+                            Atlantic slave system.</p><span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a> <a href="#source-embassy" aria-label="Source: Embassy of Haiti">(Embassy of Haiti)</a></span>
+
+                    </article>
+
+                    <article class="event-record" id="event-9" hidden>
+
+                        <p class="eyebrow">AFTERMATH / RECOGNITION &amp; DEBT</p>
+
+                        <p class="event-date">17 April 1825</p>
+
+                        <h3>Recognition carries a ransom.</h3>
+
+                        <p class="event-meta">France → Port-au-Prince<br><strong>People:</strong> King Charles X;
+
+                            President Jean-Pierre Boyer</p>
+
+                        <p>Charles X issued an ordinance demanding 150 million francs for former colonists. A French
+
+                            naval mission later that year pressured Boyer into accepting the terms.</p>
+
+                        <p class="why"><strong>Why it matters</strong> This was an aftermath of independence, not an
+
+                            event in the 1791–1804 war. Recognition was used to extract wealth from an already
+
+                            independent country.</p><span class="citation"><a href="#source-bnf" aria-label="Source: Gaillard-Pourchet">(Gaillard-Pourchet)</a></span>
+
+                    </article>
+
+                    <div class="event-controls"><button id="previous-event" disabled>← Previous</button><span id="event-position" aria-live="polite">1 / 10</span><button id="next-event">Next →</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="map-header">
+
+                <div>
+
+                    <p class="eyebrow">EXPLORE / THE GEOGRAPHY</p>
+
+                    <h3>One island.<br>A struggle across empires.</h3>
+
+                </div>
+
+                <p>Saint-Domingue was the French west; Santo Domingo was the Spanish east in 1791. Spain ceded the east
+
+                    to France in 1795. Louverture extended his authority there in 1801. Modern coastlines and the modern
+
+                    border below are orientation aids, not a map of political control at every date. <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class
+
+                            timeline)</a></span></p>
+
+            </div>
+
+            <div class="map-layout">
+
+                <div>
+
+                    <div class="map-canvas"><svg viewbox="0 0 800 340" role="img" aria-label="Map of Hispaniola: Haiti on the west and present-day Dominican Republic on the east. Click the location buttons beneath the map for details.">
+
+                            <defs>
+
+                                <pattern id="grid" width="40" height="40" patternunits="userSpaceOnUse">
+
+                                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#40413b" stroke-width=".5"></path>
+
+                                </pattern>
+
+                            </defs>
+
+                            <rect width="800" height="340" fill="url(#grid)"></rect>
+
+                            <path class="haiti-land" d="M362.1,74.3 L372.7,149.9 L363.5,203.2 L333.9,226.6 L365.1,268.3 L362.6,306.0 L282.1,282.4 L224.9,292.0 L151.0,282.0 L94.3,307.9 L29.3,264.7 L40.0,220.0 L151.6,239.2 L243.0,250.4 L286.7,219.5 L231.3,159.4 L232.2,106.4 L155.8,84.7 L183.1,46.4 L257.0,52.5 L362.1,74.3Z"></path>
+
+                            <path class="neighbor-land" d="M362.6,306.0 L365.1,268.3 L333.9,226.6 L363.5,203.2 L372.7,149.9 L362.1,74.3 L377.3,50.7 L471.9,51.3 L543.7,87.0 L575.7,83.5 L597.7,132.8 L664.0,130.0 L660.1,171.4 L714.0,176.4 L773.6,227.3 L728.6,283.8 L670.9,253.6 L615.3,259.4 L575.4,252.8 L553.5,278.1 L507.0,286.7 L488.6,253.0 L448.5,272.9 L400.0,368.0 L368.8,345.9 L362.6,306.0Z"></path>
+
+                            <text x="80" y="300" class="sea-label">CARIBBEAN SEA</text><text x="230" y="145" class="land-label">SAINT-DOMINGUE</text><text x="520" y="165" class="land-label">SANTO
+
+                                DOMINGO</text><text x="520" y="186" class="small-map-label">Spanish colony in
+
+                                1791</text><text x="230" y="166" class="small-map-label">French colony in 1791</text>
+
+                            <path d="M 745 70 L745 30 l-6 14 m6-14 l6 14" stroke="#eae3d4" fill="none"></path><text x="739" y="23" class="small-map-label">N</text>
+
+                        </svg><button class="pin active" data-location="cap" style="left:37.878787878787826%;top:19.999999999999943%" aria-label="Cap-Français" aria-pressed="true"><span>1</span></button><button class="pin " data-location="vertieres" style="left:37.42424242424236%;top:21.632653061224545%" aria-label="Vertières" aria-pressed="false"><span>2</span></button><button class="pin " data-location="gonaives" style="left:30.454545454545496%;top:32.65306122448983%" aria-label="Gonaïves" aria-pressed="false"><span>3</span></button><button class="pin " data-location="port" style="left:35.75757575757571%;top:69.795918367347%" aria-label="Port-au-Prince" aria-pressed="false"><span>4</span></button></div>
+
+                    <p class="small">North is up. Generalized coastline and modern border: Natural Earth, public domain.
+
+                        Markers are approximate; Cap-Français and Vertières are very close.</p>
+
+                    <div class="button-row map-choices"><button data-location="cap" aria-pressed="true">1.
+
+                            Cap-Français</button><button data-location="vertieres" aria-pressed="false">2.
+
+                            Vertières</button><button data-location="gonaives" aria-pressed="false">3.
+
+                            Gonaïves</button><button data-location="port" aria-pressed="false">4.
+
+                            Port-au-Prince</button></div>
+
+                </div>
+
+                <aside id="map-panel" aria-live="polite">
+
+                    <p class="eyebrow">LOCATION / 01</p>
+
+                    <h4>Cap-Français</h4>
+
+                    <p>Now Cap-Haïtien. The nearby northern plain was a center of the August 1791 uprising. The port was
+
+                        also a major colonial center and battleground.</p><span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a> <a href="#source-state" aria-label="Source: Office of the Historian">(Office of the Historian)</a></span>
+
+                </aside>
+
+            </div>
+
+            <details class="research-detail archival-map"><summary>Compare with an actual map of Saint-Domingue, 1780</summary><figure><a href="assets/saint-domingue-1780.jpg" target="_blank" rel="noopener" aria-label="Open the full-size 1780 map"><img src="assets/saint-domingue-1780.jpg" width="1876" height="1443" loading="lazy" alt="Jacques François Des Longchamps’s 1780 map of Hispaniola, marking the French western part and Spanish eastern part, with an inset of Cap-Français"></a><figcaption>Jacques François Des Longchamps, <i>Carte de l’île de Saint Domingue</i>, Paris, 1780. Library of Congress. <span class="citation"><a href="#source-archival-map">(Des Longchamps, 1780)</a></span></figcaption></figure><p>Look for “Partie Françoise” in the west and “Partie Espagnole” in the east. The upper-left inset shows the area around Cap-Français, near the northern plain where the 1791 uprising began. This is a map from the colonial period, not a reconstruction of the war.</p><p>Because it predates 1791, it does not show the uprising, shifting military control, or later independence. The clickable map above remains useful for locating the exhibit’s events. Select this image to inspect the full-size scan.</p></details><details class="research-detail">
+
+                <summary>Zoom out: France, Spain, Britain, and the United States</summary><img class="atlantic-map" src="assets/atlantic.svg" alt="Atlantic locator map showing Saint-Domingue in the Caribbean southwest of France, Spain, and Britain, and southeast of the United States." loading="lazy">
+
+                <p>France sought to retain the colony; Spain backed insurgents against France; Britain invaded and
+
+                    sought colonial advantage. Louverture used rivalries strategically. The United States traded with
+
+                    Saint-Domingue, alternated between assistance and hostility, and withheld diplomatic recognition of
+
+                    Haiti until 1862. Lack of recognition did not mean that all trade stopped. <span class="citation"><a href="#source-state" aria-label="Source: Office of the Historian">(Office of the
+
+                            Historian)</a></span></p>
+
+                <p class="small">Locator map with modern national outlines; dashed lines show connections, not exact
+
+                    military routes. Natural Earth geometry.</p>
+
+            </details>
+
+            <details class="research-detail transcript">
+
+                <summary>Read all ten events as a continuous timeline</summary>
+
+                <h4>1789 — Rights proclaimed. Rights contested.</h4>
+
+                <p>As France’s revolution challenged Louis XVI’s monarchy, debates over rights spread to Saint-Domingue. Lafayette proposed a declaration of rights; the National Assembly adopted the Declaration of the Rights of Man and of the Citizen on 26 August 1789. Colonial groups disagreed over who should benefit. <strong>Significance:</strong> Universal rights became an argument against racial exclusion, but did not immediately end slavery. <span class="citation"><a href="#source-class">(Class timeline)</a> <a href="#source-declaration">(Library of Congress, “Declaration Legacy”)</a></span></p><h4>August 1791 — The enslaved majority rises.</h4>
+
+                <p>A coordinated uprising attacked the plantation system in northern Saint-Domingue. Enslaved people
+
+                    turned long-standing resistance into a large military and political challenge.
+
+                    <strong>Significance:</strong> Freedom would be fought for by enslaved people themselves. The
+
+                    struggle could no longer be confined to disputes among free colonists. <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a> <a href="#source-eddins" aria-label="Source: Eddins 277–81">(Eddins 277–81)</a></span></p>
+
+                <h4>4 April 1792 — Citizenship expands. Slavery remains.</h4>
+
+                <p>France granted equal political rights to free men of color. Commissioners, including Sonthonax and
+
+                    Polverel, came to enforce the new policy. <strong>Significance:</strong> This attacked racial
+
+                    exclusion among free men, while leaving the enslaved majority outside citizenship. One revolutionary
+
+                    goal did not resolve the others. <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a></span></p>
+
+                <h4>29 August 1793 — Emancipation in the north.</h4>
+
+                <p>Sonthonax proclaimed general emancipation in the north as French authority faced internal conflict
+
+                    and foreign invasion. Polverel extended emancipation in other regions.
+
+                    <strong>Significance:</strong> Insurgent pressure and the need for military allies helped turn a
+
+                    French mission to restore order into a break with slavery. <span class="citation"><a href="#source-shen" aria-label="Source: Shen, “Upheavals”">(Shen, “Upheavals”)</a></span>
+
+                </p>
+
+                <h4>4 February 1794 — France abolishes colonial slavery.</h4>
+
+                <p>The National Convention abolished slavery in France’s colonies. Saint-Domingue’s deputies brought the colonial struggle into French politics; Dufay spoke in the debate and Danton supported abolition. In May, Louverture left his Spanish alliance and joined the French republican forces. <strong>Significance:</strong> The relationship worked in both directions: revolutionary ideas influenced Saint-Domingue, and the colonial uprising transformed French policy. <span class="citation"><a href="#source-class">(Class timeline)</a> <a href="#source-shen">(Shen, “Upheavals”)</a> <a href="#source-assembly">(Assemblée nationale)</a></span></p><h4>July 1801 — Free—and still formally French.</h4>
+
+                <p>Louverture’s constitution maintained abolition and claimed broad autonomy while keeping a formal
+
+                    connection to France. He became governor for life; compulsory plantation labor continued.
+
+                    <strong>Significance:</strong> This was not a declaration of independence. Abolition, political
+
+                    authority, and workers’ freedom to control labor remained contested. <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a> <a href="#source-power" aria-label="Source: Shen, “Louverture”">(Shen, “Louverture”)</a></span>
+
+                </p>
+
+                <h4>1802 — French reconquest threatens freedom.</h4>
+
+                <p>Napoleon sent Leclerc’s expedition to restore French control. Louverture was arrested and deported in
+
+                    June. Slavery’s restoration in Guadeloupe and attempts to disarm Black troops deepened fears of
+
+                    re-enslavement. <strong>Significance:</strong> Dessalines and other commanders briefly served the
+
+                    French before rejoining resistance. Independence increasingly became a way to secure emancipation.
+
+                    <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class
+
+                            timeline)</a></span></p>
+
+                <h4>18 November 1803 — Victory at Vertières.</h4>
+
+                <p>Revolutionary forces defeated the French at Vertières, helping force the evacuation of the remaining
+
+                    French expedition. <strong>Significance:</strong> Haitian military organization and resistance were
+
+                    decisive. Yellow fever and, later, Britain’s naval pressure also weakened the French expedition.
+
+                    <span class="citation"><a href="#source-embassy" aria-label="Source: Embassy of Haiti">(Embassy of
+
+                            Haiti)</a> <a href="#source-class" aria-label="Source: Class timeline">(Class
+
+                            timeline)</a></span></p>
+
+                <h4>1 January 1804 — Haiti declares independence.</h4>
+
+                <p>Dessalines proclaimed independence and the name Haiti replaced Saint-Domingue. The victorious
+
+                    revolution ended French colonial rule in the west of Hispaniola. <strong>Significance:</strong> A
+
+                    society built on racial slavery became an independent Black state. The victory made
+
+                    self-emancipation a challenge to the wider Atlantic slave system. <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a> <a href="#source-embassy" aria-label="Source: Embassy of Haiti">(Embassy of Haiti)</a></span>
+
+                </p>
+
+                <h4>17 April 1825 — Recognition carries a ransom.</h4>
+
+                <p>Charles X issued an ordinance demanding 150 million francs for former colonists. A French naval
+
+                    mission later that year pressured Boyer into accepting the terms. <strong>Significance:</strong>
+
+                    This was an aftermath of independence, not an event in the 1791–1804 war. Recognition was used to
+
+                    extract wealth from an already independent country. <span class="citation"><a href="#source-bnf" aria-label="Source: Gaillard-Pourchet">(Gaillard-Pourchet)</a></span></p>
+
+            </details>
+
+        </section>
+
+        <section class="exhibit" id="leadership">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">03 / THE PEOPLE</p>
+
+                <h2>People.<br>Power. <em>Choices.</em></h2>
+
+                <p>These four figures influenced the revolution in different ways. Sonthonax and Napoleon represented French authority; Louverture and Dessalines emerged from the struggle against slavery. The portraits are historical artworks, with dates and sources below each image.</p>
+
+            </div>
+
+            <div class="button-row leader-choices" aria-label="Choose a historical figure"><button data-leader="0" aria-pressed="true">Toussaint Louverture</button><button data-leader="1" aria-pressed="false">Jean-Jacques Dessalines</button><button data-leader="2" aria-pressed="false">Léger-Félicité Sonthonax</button><button data-leader="3" aria-pressed="false">Napoleon Bonaparte</button></div>
+
+            <div aria-live="polite">
+
+                <article class="leader-profile" id="leader-0">
+
+                    <figure class="leader-art"><img src="assets/toussaint-portrait.jpg" alt="Posthumous chromolithographic portrait of Toussaint Louverture wearing a red headwrap" width="785" height="1024" loading="lazy"><figcaption class="small">George DeBaptiste, publisher; Corrie’s Detroit Lithographic Office, c. 1870. Library of Congress. A later representation, not a portrait made during his lifetime. <span class="citation"><a href="#source-portrait-toussaint">(DeBaptiste)</a></span></figcaption></figure><div>
+
+                        <p class="eyebrow">Defending emancipation / 1790s–1802</p>
+
+                        <h3>Toussaint Louverture</h3>
+
+                        <p>Born enslaved and free before the uprising, Louverture became a leading commander. He first
+
+                            fought alongside Spain, then joined the French Republic in 1794. He consolidated power and
+
+                            issued the 1801 constitution. Arrested and deported in 1802, he died in French captivity in
+
+                            1803.</p>
+
+                        <h4>What his role reveals</h4>
+
+                        <p>He defended abolition while imposing plantation labor and concentrating political power. His
+
+                            career shows why legal emancipation did not settle who controlled work or government.</p>
+
+                        <span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class
+
+                                timeline)</a> <a href="#source-power" aria-label="Source: Shen, “Louverture”">(Shen,
+
+                                “Louverture”)</a> <a href="#source-shen" aria-label="Source: Shen, “Upheavals”">(Shen,
+
+                                “Upheavals”)</a></span>
+
+                    </div>
+
+                </article>
+
+                <article class="leader-profile" id="leader-1" hidden>
+
+                    <figure class="leader-art"><img src="assets/dessalines-portrait.jpg" alt="Historical engraved portrait of Jean-Jacques Dessalines in military uniform and a plumed hat" width="917" height="1378" loading="lazy"><figcaption class="small">Book illustration published in S. Rouzier’s dictionary, 1892, p. 115. British Library scan. Made long after Dessalines’s death. <span class="citation"><a href="#source-portrait-dessalines">(Rouzier, portrait of Dessalines)</a></span></figcaption></figure><div>
+
+                        <p class="eyebrow">Winning independence / 1802–1804</p>
+
+                        <h3>Jean-Jacques Dessalines</h3>
+
+                        <p>Formerly enslaved, Dessalines became one of Louverture’s generals. After briefly serving
+
+                            under Leclerc in 1802, he joined the final coalition against France, led the independence
+
+                            struggle, and proclaimed Haiti independent in 1804.</p>
+
+                        <h4>What his role reveals</h4>
+
+                        <p>His victory secured freedom from France, but he became emperor later in 1804 and ordered
+
+                            massacres of remaining French residents. Independence did not automatically produce
+
+                            inclusive democracy or end state violence.</p><span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a> <a href="#source-state" aria-label="Source: Office of the Historian">(Office of the Historian)</a></span>
+
+                    </div>
+
+                </article>
+
+                <article class="leader-profile" id="leader-2" hidden>
+
+                    <figure class="leader-art"><img src="assets/sonthonax-portrait.jpg" alt="Eighteenth-century oil portrait of Léger-Félicité Sonthonax seated with an emancipation document" width="789" height="1024" loading="lazy"><figcaption class="small">Unidentified artist, late eighteenth century. Public-domain reproduction via Wikimedia Commons. <span class="citation"><a href="#source-portrait-sonthonax">(Portrait of Sonthonax)</a></span></figcaption></figure><div>
+
+                        <p class="eyebrow">A French commissioner / 1792–1797</p>
+
+                        <h3>Léger-Félicité Sonthonax</h3>
+
+                        <p>Sent to enforce political equality for free people of color, Sonthonax proclaimed
+
+                            emancipation in the north on 29 August 1793. Revolt, civil conflict, and foreign
+
+                            intervention helped push French officials toward abolition.</p>
+
+                        <h4>What his role reveals</h4>
+
+                        <p>He sought to preserve French republican control. He was an important agent of emancipation,
+
+                            but was not a leader of Haitian independence; insurgents helped force the change he enacted.
+
+                        </p><span class="citation"><a href="#source-shen" aria-label="Source: Shen, “Upheavals”">(Shen,
+
+                                “Upheavals”)</a></span>
+
+                    </div>
+
+                </article>
+
+                <article class="leader-profile" id="leader-3" hidden>
+
+                    <figure class="leader-art"><img src="assets/napoleon-portrait.jpg" alt="Antoine-Jean Gros’s 1802 oil portrait of Napoleon Bonaparte in the red uniform of First Consul" width="348" height="500" loading="lazy"><figcaption class="small">Antoine-Jean Gros, Bonaparte Premier Consul, 1802. Musée national de la Légion d’honneur, Paris; reproduced by Fondation Napoléon. <span class="citation"><a href="#source-portrait-napoleon">(Gros)</a></span></figcaption></figure><div>
+
+                        <p class="eyebrow">Restoring colonial authority / 1802–1803 expedition</p>
+
+                        <h3>Napoleon Bonaparte</h3>
+
+                        <p>As France’s First Consul, Napoleon sent the expedition commanded by his brother-in-law
+
+                            Charles Leclerc in 1802. French efforts to disarm troops, remove Black commanders, and
+
+                            restore colonial authority threatened the revolution’s gains.</p>
+
+                        <h4>What his role reveals</h4>
+
+                        <p>The law of 20 May 1802 maintained slavery where it had not been abolished; it did not itself
+
+                            restore slavery in Saint-Domingue. Its restoration elsewhere made fears of re-enslavement
+
+                            credible.</p><span class="citation"><a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a></span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="leader-note">Beyond the generals: insurgent networks and women’s participation helped sustain the
+
+                revolution. Boukman, Biassou, and Jean-François helped lead early resistance; no single leader created
+
+                the movement. <span class="citation"><a href="#source-eddins" aria-label="Source: Eddins 277–81">(Eddins
+
+                        277–81)</a></span></p>
+
+        </section>
+
+        <section class="exhibit" id="struggles">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">04 / HISTORICAL INTERPRETATION</p>
+
+                <h2>One revolution.<br><em>Three struggles.</em></h2>
+
+                <p>These were overlapping conflicts with changing goals—not three neatly separated revolutions. Each
+
+                    breakthrough exposed the limits of the previous one.</p>
+
+            </div>
+
+            <div class="struggle-rows">
+
+                <article><span>01</span>
+
+                    <div>
+
+                        <p class="eyebrow">POLITICAL EQUALITY / FREE PEOPLE OF COLOR</p>
+
+                        <h3>Who gets to be a citizen?</h3>
+
+                        <p>Equal political rights challenged white monopoly on citizenship. The 1792 reform still
+
+                            excluded enslaved people. Some advocates of racial equality among free people remained
+
+                            slaveholders.</p>
+
+                    </div>
+
+                    <p class="bridge">1792 reform<br><strong>≠</strong><br>universal freedom</p>
+
+                </article>
+
+                <article><span>02</span>
+
+                    <div>
+
+                        <p class="eyebrow">EMANCIPATION / ENSLAVED INSURGENTS</p>
+
+                        <h3>Who owns a human life?</h3>
+
+                        <p>The 1791 uprising overlapped with the citizenship struggle. Emancipation in 1793 and French
+
+                            abolition in 1794 attacked slavery itself. Yet compulsory plantation labor kept the meaning
+
+                            of freedom in dispute.</p>
+
+                    </div>
+
+                    <p class="bridge">1794 abolition<br><strong>≠</strong><br>control of labor</p>
+
+                </article>
+
+                <article><span>03</span>
+
+                    <div>
+
+                        <p class="eyebrow">INDEPENDENCE / AN ANTI-COLONIAL COALITION</p>
+
+                        <h3>Who can guarantee freedom?</h3>
+
+                        <p>Louverture’s 1801 constitution tried to protect abolition within a French connection. The
+
+                            1802 expedition showed how vulnerable that arrangement was. Expelling France became a means
+
+                            of preventing re-enslavement.</p>
+
+                    </div>
+
+                    <p class="bridge">1804 sovereignty<br><strong>≠</strong><br>economic security</p>
+
+                </article>
+
+            </div>
+
+            <p class="analysis">The alliances changed because each group was trying to protect a different version of freedom. Louverture could support France when the Republic defended abolition; Dessalines could later fight France when colonial rule threatened it. The enslaved uprising began in 1791, before free men of color won equal political rights in 1792. That overlap matters: emancipation was already being fought for while citizenship was still being debated. Independence grew out of these conflicts rather than following a plan everyone had shared from the beginning. <span class="citation"><a href="#source-class">(Class timeline)</a> <a href="#source-shen">(Shen, “Upheavals”)</a></span></p><div class="evidence-reading primary-reading"><p class="eyebrow">CLOSE READING / A PRIMARY SOURCE</p><h3>The contradictions inside the 1801 constitution</h3><p>Article 3 states, “There cannot exist slaves on this territory.” Yet this was not a declaration of independence or a promise that workers could freely leave plantations. Read the provisions together. <span class="citation"><a href="#source-constitution">(Constitution of 1801, arts. 1, 3, 16, 28)</a></span></p><div class="three-col"><article><span>ARTICLES 1 &amp; 3</span><h4>Abolition within the French Empire</h4><p>The constitution preserved a French connection while making abolition permanent in law. Louverture was trying to secure freedom without formally breaking with France.</p></article><article><span>ARTICLE 16</span><h4>Workers still faced restrictions</h4><p>The text treated cultivators’ movement between plantations as a danger to production and allowed the governor to enforce labor rules. For workers, freedom also meant control over where and how they worked.</p></article><article><span>ARTICLE 28</span><h4>A governor for life</h4><p>Louverture received life tenure. The constitution rejected racial slavery while placing political authority in one leader’s hands. Abolition and democracy were separate questions.</p></article></div><p><strong>Why this matters:</strong> This document supports the “three revolutions” interpretation with evidence. Racial equality, emancipation, and national independence did not arrive together. Even leaders who defended abolition disagreed with workers over the practical meaning of freedom.</p><p class="small">English translation, articles 1, 3, 16, and 28. A constitution records legal aims; it cannot by itself show how consistently those aims were enforced.</p></div></section>
+
+        <section class="exhibit" id="sacrifice">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">05 / THE AFTERMATH</p>
+
+                <h2>The price<br><em>of recognition.</em></h2>
+
+                <p>Haiti won independence in 1804. France made recognition conditional on payment in 1825. Former
+
+                    colonists were to receive compensation; the people who had been enslaved received a bill.</p>
+
+            </div>
+
+            <div class="debt-chart" role="img" aria-label="Indemnity demand: 150 million francs in 1825, reduced to a total of 90 million in 1838. These totals exclude interest and other borrowing costs.">
+
+                <div>
+
+                    <div class="bar-label"><span>1825 / ORIGINAL DEMAND</span><strong>150M
+
+                            <small>francs</small></strong></div>
+
+                    <div class="bar"><span style="width:100%"></span></div>
+
+                </div>
+
+                <div>
+
+                    <div class="bar-label"><span>1838 / REVISED TOTAL</span><strong>90M <small>francs</small></strong>
+
+                    </div>
+
+                    <div class="bar"><span style="width:60%"></span></div>
+
+                </div>
+
+                <p class="small">Historical indemnity totals, not annual installments or present-day dollars. The
+
+                    revision replaced the original total; it was not an additional 90 million. Interest and borrowing
+
+                    costs are separate. <span class="citation"><a href="#source-bnf" aria-label="Source: Gaillard-Pourchet">(Gaillard-Pourchet)</a></span></p>
+
+            </div>
+
+            <div class="two-col debt-explanation">
+
+                <article>
+
+                    <h3>A coerced agreement</h3>
+
+                    <p>Charles X’s ordinance of 17 April 1825 demanded payment to former colonists. Under naval
+
+                        pressure, President Boyer accepted that summer. Earlier Haitian leaders had discussed
+
+                        compensation as a route to recognition, but the military threat and imposed terms made
+
+                        bargaining profoundly unequal.</p>
+
+                    <p>Plantation valuations incorporated enslaved labor. The arrangement assigned financial value to
+
+                        slaveholders’ losses while denying compensation to those who had endured slavery. <span class="citation"><a href="#source-bnf" aria-label="Source: Gaillard-Pourchet">(Gaillard-Pourchet)</a></span></p>
+
+                </article>
+
+                <article>
+
+                    <h3>The double debt</h3>
+
+                    <p>Haiti owed the indemnity and borrowed to pay it. The first 30-million-franc loan delivered only
+
+                        24 million after charges, so Haiti had to supply the difference. Interest created obligations
+
+                        beyond the indemnity itself.</p>
+
+                    <p>The burden transferred resources out of Haiti and reduced what the state could use at home.
+
+                        Political independence did not remove outside control over the conditions of economic survival.
+
+                        <span class="citation"><a href="#source-bnf" aria-label="Source: Gaillard-Pourchet">(Gaillard-Pourchet)</a></span></p>
+
+                </article>
+
+            </div>
+
+            <div class="evidence-reading"><p class="eyebrow">FOLLOW THE MONEY / EVIDENCE AND INTERPRETATION</p><h3>Why a smaller debt was still a serious burden</h3><p>Gaillard-Pourchet finds that external debt service consumed about half of state revenue in 1838–44. That figure concerns external debt as a whole, not only the original indemnity. It shows the scale of the competing claim on public funds. <span class="citation"><a href="#source-bnf">(Gaillard-Pourchet)</a></span></p><p>Revenue used for repayment could not also pay for public services. When payment required another loan, the immediate problem could become a longer obligation. The effect was more than a one-time loss: borrowing costs and the loss of investment could continue after the original transfer. This helps explain the connection to public investment without assuming that we can calculate exactly which present-day problems each franc caused.</p><h4>Why would Boyer accept?</h4><p>Recognition could offer greater security and a path to normal diplomatic relations. A leader facing French naval pressure could see payment as the least dangerous option. But a practical reason for accepting an agreement does not make its terms fair. Haiti was being charged to secure recognition of the independence it had already won. <span class="citation"><a href="#source-bnf">(Gaillard-Pourchet)</a></span></p></div><details class="research-detail">
+
+                <summary>Evidence check: Why do sources give different final repayment dates?</summary>
+
+                <p>The answer depends on which obligation is being counted. Gaillard-Pourchet dates settlement of the
+
+                    indemnity to 1878 through refinancing, and the end of payments on the 1875 loan to 1921–22. UN News
+
+                    uses 1947 for the broader debt legacy. These dates should not be collapsed into a claim that Haiti
+
+                    paid the original indemnity directly to France until 1947. <span class="citation"><a href="#source-bnf" aria-label="Source: Gaillard-Pourchet">(Gaillard-Pourchet)</a> <a href="#source-un" aria-label="Source: UN News, 2025">(UN News, 2025)</a></span></p>
+
+            </details>
+
+            <div class="reparations">
+
+                <p class="eyebrow">THE CONTROVERSY / EVALUATE THE CLAIM</p>
+
+                <h3>Does France owe Haiti reparations?</h3>
+
+                <div class="two-col">
+
+                    <article>
+
+                        <h4>The case for restitution</h4>
+
+                        <p>Recognition was tied to an extraction backed by force. Restitution would address a specific
+
+                            transfer, rather than treating Haiti’s financial constraints as a failure of its people. A
+
+                            claim for compensation for the wider damage would also consider the opportunities lost when
+
+                            public resources left the country.</p>
+
+                    </article>
+
+                    <article>
+
+                        <h4>The questions a remedy must answer</h4>
+
+                        <p>Returning documented payments, adjusting their present value, and compensating for lost
+
+                            growth are different calculations. A settlement must identify beneficiaries, funding, and
+
+                            Haitian control of its use. Disagreement over the amount or delivery does not by itself
+
+                            erase the original injustice.</p>
+
+                    </article>
+
+                </div>
+
+                <div class="named-proposals"><h4>What people are asking for now</h4><p>In the April 2025 UN report, journalist Monique Clesca describes the reversal: those who won freedom had to compensate former enslavers. Martin Kimani calls for returning extracted funds and addressing underdevelopment; Gaynel Curry proposes a reparations fund and an independent Human Rights Council inquiry. <span class="citation"><a href="#source-un">(UN News, 2025)</a></span></p><p>These proposals address different needs. Restitution concerns money taken; a fund concerns how repair could support people today; an inquiry would investigate responsibility and possible remedies. A credible response would need to explain both what France owes and how Haitians would decide what happens next.</p></div><details open="">
+
+                    <summary>Read the exhibition’s judgment</summary>
+
+                    <p>France should return the wealth extracted through the indemnity and negotiate further repair with Haitians. The strongest reason is the specific injustice: a military threat helped force a country founded by formerly enslaved people to compensate former colonists. The amount and form of a settlement still need careful agreement. Haitian participation and independent oversight would matter because acknowledgment alone does not restore resources or guarantee public benefit.</p>
+
+                </details>
+
+                <p class="small">This evaluation draws on the historical evidence above; current calls for restitution
+
+                    are reported in <span class="citation"><a href="#source-un" aria-label="Source: UN News, 2025">(UN
+
+                            News, 2025)</a></span>.</p>
+
+            </div>
+
+        </section>
+
+        <section class="exhibit" id="legacy">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">06 / THE LEGACY</p>
+
+                <h2>Freedom won.<br><em>A future constrained.</em></h2>
+
+                <p>Was the revolution successful? Against slavery and French colonial rule, decisively. Measured by
+
+                    economic security or democratic government, its victory left unfinished struggles.</p>
+
+            </div>
+
+            <div class="modern-feature">
+
+                <p class="eyebrow">MODERN CONNECTION / PUBLIC INVESTMENT &amp; FINANCIAL SOVEREIGNTY</p>
+
+                <h3>How a debt becomes a development problem.</h3>
+
+                <div class="causal-chain">
+
+                    <div><span>1825</span>
+
+                        <h4>Payment imposed</h4>
+
+                        <p>Recognition tied to an indemnity.</p>
+
+                    </div>
+
+                    <div><span>19TH CENTURY</span>
+
+                        <h4>Revenue diverted</h4>
+
+                        <p>Borrowing and repayment compete with domestic priorities.</p>
+
+                    </div>
+
+                    <div><span>LONG-TERM EFFECT</span>
+
+                        <h4>Investment constrained</h4>
+
+                        <p>Less room to build infrastructure and institutions.</p>
+
+                    </div>
+
+                    <div><span>2025</span>
+
+                        <h4>Restitution debated</h4>
+
+                        <p>The legacy becomes a question of resources and responsibility.</p>
+
+                    </div>
+
+                </div>
+
+                <p>The connection is that past extraction reduced the resources available to build a stronger state. It does not prove that the indemnity caused every school, road, or service missing today. Later political decisions, foreign interventions, disasters, and violence also shaped Haiti’s development. This history explains an important constraint, not an inevitable outcome. <span class="citation"><a href="#source-bnf">(Gaillard-Pourchet)</a> <a href="#source-state">(Office of the Historian)</a></span></p></div>
+
+            <div class="two-col modern-news">
+
+                <article>
+
+                    <p class="eyebrow">CONTEMPORARY EVIDENCE / 19 APRIL 2025</p>
+
+                    <h3>“How Haiti Paid for Its Freedom – Twice Over”</h3>
+
+                    <p>The 19 April 2025 UN News report cites roughly $560 million as the modern equivalent of payments and more than $20 billion in estimated lost growth, drawing on a 2022 investigation. The second figure models how the economy might have grown if the money had stayed in Haiti. It is not an amount Haiti literally paid. <span class="citation"><a href="#source-un">(UN News, 2025)</a></span></p><p>A 17 April 2025 AP report states that Macron announced a joint Haitian–French historical commission on 17 April 2025, but did not directly address demands for reparations. This distinction matters: recognizing an injustice does not establish what will be returned or how it will improve people’s lives. <span class="citation"><a href="#source-ap">(Nouvian and Corbet)</a></span></p><a class="text-link" href="https://caribbean.un.org/en/293392-how-haiti-paid-its-freedom-%E2%80%93-twice-over">Read
+
+                        the dated news report ↗</a>
+
+                <p>Kimani welcomed the commission but tied its value to honestly acknowledging the harm. The modern issue is therefore concrete: whether investigation will lead to resources that Haitians can use for their own priorities, rather than another symbolic statement. <span class="citation"><a href="#source-un">(UN News, 2025)</a></span></p></article>
+
+                <article>
+
+                    <p class="eyebrow">IDENTITY / THE MEANING OF THE VICTORY</p>
+
+                    <h3>Haiti changed who could claim freedom.</h3>
+
+                    <p>The revolution created the first independent Black republic and the only successful enslaved
+
+                        uprising to found an independent nation. Independence challenged the idea that racial slavery
+
+                        was a natural or permanent foundation for wealth and government.</p>
+
+                    <p>Its legacy reaches beyond economic hardship. Commemorations of independence and Vertières
+
+                        preserve a history of collective action and sovereignty. Treating Haiti only as a symbol of
+
+                        failure repeats the erasure of what its people achieved. <span class="citation"><a href="#source-embassy" aria-label="Source: Embassy of Haiti">(Embassy of Haiti)</a> <a href="#source-class" aria-label="Source: Class timeline">(Class timeline)</a></span></p>
+
+                </article>
+
+            </div>
+
+            <div class="success-reading"><p class="eyebrow">ASSESSING THE OUTCOME</p><h3>Successful by which measure?</h3><div class="three-col"><article><h4>Ending slavery and French rule</h4><p>The revolution succeeded. The 1804 declaration secured independence, and the attempt to restore slavery in Saint-Domingue failed. Later poverty does not undo that achievement.</p></article><article><h4>Creating democratic freedom</h4><p>The outcome was more limited. Louverture’s life tenure, plantation labor restrictions, and Dessalines’s later imperial rule show that independence did not settle who should hold power or how it should be used.</p></article><article><h4>Securing economic independence</h4><p>Haiti became sovereign but still faced powerful foreign demands. The indemnity shows how France could extract wealth even after losing the colony. Military victory did not remove every form of colonial influence.</p></article></div><p>Judging the revolution only by present-day hardship makes its success depend on whether later generations escaped every obstacle. A fairer assessment asks what it changed, what it left unresolved, and which later pressures were imposed on the country. <span class="citation"><a href="#source-class">(Class timeline)</a> <a href="#source-constitution">(Constitution of 1801, arts. 1, 3, 16, 28)</a> <a href="#source-bnf">(Gaillard-Pourchet)</a></span></p></div><div class="final-argument">
+
+                <p class="eyebrow">RETURN TO THE ESSENTIAL QUESTION</p>
+
+                <h3>Political freedom was real.<br>Its economic conditions were unequal.</h3>
+
+                <p>The Haitian Revolution shaped Haiti’s identity to a very great extent: freedom from slavery and the right of Black people to govern themselves became the foundation of the nation. It also shaped later challenges because other powers treated that independence as something Haiti had to pay to have recognized. The indemnity reduced the resources available for development, but it cannot explain every later crisis. The most convincing conclusion is that Haiti won real political freedom while facing severe limits on its economic choices. The revolution’s success and the country’s later struggles are both part of that history.</p></div>
+
+            <details class="research-detail">
+
+                <summary>Test your interpretation: Why wasn’t the 1792 reform enough?</summary>
+
+                <p>It expanded political rights for free men of color but did not abolish slavery. The 1791 uprising was
+
+                    already demanding deeper change. This overlap is exactly why the revolution cannot be reduced to
+
+                    three isolated stages.</p>
+
+            </details>
+
+        </section>
+
+        <section class="exhibit sources" id="sources">
+
+            <div class="section-heading">
+
+                <p class="eyebrow">THE RESEARCH / WORKS CITED</p>
+
+                <h2>Follow<br><em>the evidence.</em></h2>
+
+                <p>The exhibit uses thirteen historical and research sources, plus five portrait and map records. The class timeline and The Nib come from the assignment’s resource list. Image credits identify the artwork’s date and whether it was created after the subject’s death.</p>
+
+            </div><a class="download-link" href="Works%20Cited.pdf" download>Download MLA Works Cited (PDF) ↓</a> · <a class="download-link" href="works-cited.html">Open the printable version ↗</a>
+
+            <ol class="source-list">
+
+                <li id="source-nib">
+
+                    <p>Cotard, Rocky, and Laurent Dubois. “The Slave Revolution That Gave Birth to Haiti.” <i>The
+
+                            Nib</i>, 5 Feb. 2018. <a href="https://thenib.com/haitian-revolution/">https://thenib.com/haitian-revolution/</a>.
+
+                        Accessed 9 Nov. 2026.</p>
+
+                    <p class="source-note">Assignment resource: Haitian Revolution as a Story. Opening panels used for
+
+                        the role of enslaved women and men and the memory of the Middle Passage.</p>
+
+                </li>
+
+                <li id="source-class">
+
+                    <p>“Haitian Revolution Timeline of Key Events.” <i>Class handout</i>, n.d. <a href="https://docs.google.com/document/d/1-qgujwQYE0ES1N5gBBBm4tvCsfyOcVnBw9hXyIJRvUc/edit">https://docs.google.com/document/d/1-qgujwQYE0ES1N5gBBBm4tvCsfyOcVnBw9hXyIJRvUc/edit</a>.
+
+                        Accessed 9 Nov. 2026.</p>
+
+                    <p class="source-note">Assignment resource: Timeline of Haitian Revolution. Used for the sequence of
+
+                        events and the 1801 labor requirement; precise dates cross-checked.</p>
+
+                </li>
+
+                <li id="source-un">
+
+                    <p>“How Haiti Paid for Its Freedom – Twice Over.” <i>UN News</i>, United Nations, 19 Apr. 2025. <a href="https://caribbean.un.org/en/293392-how-haiti-paid-its-freedom-%E2%80%93-twice-over">https://caribbean.un.org/en/293392-how-haiti-paid-its-freedom-%E2%80%93-twice-over</a>.
+
+                        Accessed 9 Nov. 2026.</p>
+
+                    <p class="source-note">Linked in the assignment document. Modern news connection; this UN Caribbean
+
+                        page republishes the UN News report.</p>
+
+                </li>
+
+                <li id="source-eddins">
+
+                    <p>Eddins, Crystal Nicole. “Voices of Liberty: The Haitian Revolution Begins.” <i>Rituals, Runaways,
+
+                            and the Haitian Revolution: Collective Action in the African Diaspora</i>, Cambridge UP,
+
+                        2022, pp. 277–300. <a href="https://doi.org/10.1017/9781009256148.012">https://doi.org/10.1017/9781009256148.012</a>.
+
+                        Accessed 9 Nov. 2026.</p>
+
+                    <p class="source-note">Scholarly research: open-access scholarly chapter. Used for African political
+
+                        traditions, maroon networks, and the uncertainty around Bois Caïman.</p>
+
+                </li>
+
+                <li id="source-bnf">
+
+                    <p>Gaillard-Pourchet, Gusti-Klara. “La dette de l’indépendance d’Haïti. L’esclave comme unité de
+
+                        compte (1794–1922).” <i>Patrimoines partagés: France-Amériques</i>, Bibliothèque nationale de
+
+                        France, Nov. 2023. <a href="https://heritage.bnf.fr/france-ameriques/dette-lindependance-dhaiti-lesclave-comme-unite-compte-1794-1922">https://heritage.bnf.fr/france-ameriques/dette-lindependance-dhaiti-lesclave-comme-unite-compte-1794-1922</a>.
+
+                        Accessed 9 Nov. 2026.</p>
+
+                    <p class="source-note">Additional research: historian’s essay linked to archival documents. Used for
+
+                        loan terms, repayment chronology, and the reduction in 1838.</p>
+
+                </li>
+
+                <li id="source-state">
+
+                    <p>Office of the Historian. “The United States and the Haitian Revolution, 1791–1804.” <i>Milestones
+
+                            in the History of U.S. Foreign Relations</i>, U.S. Department of State, n.d. <a href="https://history.state.gov/milestones/1784-1800/haitian-rev">https://history.state.gov/milestones/1784-1800/haitian-rev</a>.
+
+                        Accessed 9 Nov. 2026.</p>
+
+                    <p class="source-note">Additional research: U.S. diplomatic history. Used for foreign involvement
+
+                        and delayed U.S. recognition. The historical series is now retired.</p>
+
+                </li>
+
+                <li id="source-shen">
+
+                    <p>Shen, Kona. “Upheavals in France and Saint-Domingue: 1793–1796.” <i>The Haitian Revolution
+
+                            Timeline</i>, n.d. <a href="https://thehaitianrevolution.com/upheavals">https://thehaitianrevolution.com/upheavals</a>.
+
+                        Accessed 9 Nov. 2026.</p>
+
+                    <p class="source-note">Additional research: timeline originally developed at Brown University, now
+
+                        independent. Used to check Sonthonax’s proclamation and Louverture’s change of alliance.</p>
+
+                </li>
+
+                <li id="source-power">
+
+                    <p>Shen, Kona. “Toussaint Louverture in Power: 1796–1801.” <i>The Haitian Revolution Timeline</i>,
+
+                        n.d. <a href="https://thehaitianrevolution.com/toussaint-louverture">https://thehaitianrevolution.com/toussaint-louverture</a>.
+
+                        Accessed 9 Nov. 2026.</p>
+
+                    <p class="source-note">Additional research: used for Louverture’s consolidation of power and
+
+                        tensions over plantation labor.</p>
+
+                </li>
+
+                <li id="source-embassy">
+
+                    <p>Embassy of Haiti. “Key Dates.” <i>Embassy of Haiti in Washington, D.C.</i>, n.d. <a href="https://www.haiti.org/key-dates/">https://www.haiti.org/key-dates/</a>. Accessed 9
+
+                        Nov. 2026.</p>
+
+                    <p class="source-note">Additional research: used for the Battle of Vertières and Haiti’s national
+
+                        commemorations.</p>
+
+                </li>
+
+            <li id="source-constitution"><p>Saint-Domingue, Central Assembly. <i>Constitution of 1801</i>. 1801. English translation, <i>Toussaint Louverture High School</i>, n.d. <a href="https://toussaintlouverturehs.org/PDF/const.pdf">https://toussaintlouverturehs.org/PDF/const.pdf</a>. Accessed 9 Nov. 2026.</p><p class="source-note">Primary source: articles 1 and 3 preserve a French connection while abolishing slavery; articles 16 and 28 show restrictions on workers and life tenure for Louverture.</p></li><li id="source-assembly"><p>Assemblée nationale. “Dufay et Danton (4 février 1794).” <i>Assemblée nationale</i>, n.d. <a href="https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/grands-discours-parlementaires/dufay-et-danton-4-fevrier-1794">https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/histoire/grands-discours-parlementaires/dufay-et-danton-4-fevrier-1794</a>. Accessed 9 Nov. 2026.</p><p class="source-note">Institutional edition of the 1794 debate, including speeches by Dufay and Danton. Used to explain how colonial events influenced French abolition.</p></li><li id="source-declaration"><p>Library of Congress. “Declaration Legacy.” <i>Creating the United States</i>, n.d. <a href="https://www.loc.gov/exhibits/creating-the-united-states/declaration-legacy.html">https://www.loc.gov/exhibits/creating-the-united-states/declaration-legacy.html</a>. Accessed 9 Nov. 2026.</p><p class="source-note">Exhibition with Lafayette’s draft. Used for the Declaration of the Rights of Man and of the Citizen and its adoption on 26 August 1789.</p></li><li id="source-ap"><p>Nouvian, Tom, and Sylvie Corbet. “France’s President Says That Making Haiti Pay for Its Independence Was Unjust.” <i>AP News</i>, 17 Apr. 2025. <a href="https://apnews.com/article/france-haiti-debt-independence-injustice-339df651093e932d42d607fd3f08025f">https://apnews.com/article/france-haiti-debt-independence-injustice-339df651093e932d42d607fd3f08025f</a>. Accessed 9 Nov. 2026.</p><p class="source-note">Contemporary reporting on the indemnity debate. Used for the April 2025 historical commission and the distinction between acknowledgment and a commitment to pay.</p></li><li id="source-portrait-toussaint"><p>DeBaptiste, George, publisher. <i>Toussaint L’Ouverture</i>. Circa 1870. Chromolithograph. <i>Library of Congress</i>. <a href="https://www.loc.gov/pictures/item/2014645197/">https://www.loc.gov/pictures/item/2014645197/</a>. Accessed 9 Nov. 2026.</p><p class="source-note">Portrait credit: Corrie’s Detroit Lithographic Office. No known restrictions on publication. Produced after Louverture’s death; it is not a verified life portrait.</p></li><li id="source-portrait-dessalines"><p>“Jean-Jaques Dessalines (Fondateur de l’Independance d’Haiti).” <i>Dictionnaire géographique et administratif universel d’Haïti illustré</i>, by S. Rouzier, 1892, p. 115. <i>British Library</i>, via Wikimedia Commons. <a href="https://commons.wikimedia.org/wiki/File:Jean-Jaques_Dessalines_(Fondateur_de_l'Independance_d'Haiti).jpg">https://commons.wikimedia.org/wiki/File:Jean-Jaques_Dessalines_(Fondateur_de_l'Independance_d'Haiti).jpg</a>. Accessed 9 Nov. 2026.</p><p class="source-note">Portrait credit: public-domain book illustration. British Library scan; digitization can affect contrast. Published long after Dessalines’s death.</p></li><li id="source-portrait-sonthonax"><p>Unidentified artist. <i>Portrait of Léger-Félicité Sonthonax</i>. Late eighteenth century. Oil painting. <i>Wikimedia Commons</i>. <a href="https://commons.wikimedia.org/wiki/File:Sonthonax.jpg">https://commons.wikimedia.org/wiki/File:Sonthonax.jpg</a>. Accessed 9 Nov. 2026.</p><p class="source-note">Portrait credit: public-domain reproduction of an eighteenth-century painting; artist unidentified. The file record does not identify its present collection.</p></li><li id="source-portrait-napoleon"><p>Gros, Antoine-Jean. <i>Bonaparte Premier Consul</i>. 1802. Oil on canvas, Musée national de la Légion d’honneur et des ordres de chevalerie, Paris. <i>Fondation Napoléon</i>. <a href="https://www.napoleon.org/histoire-des-2-empires/iconographie/bonaparte-premier-consul/">https://www.napoleon.org/histoire-des-2-empires/iconographie/bonaparte-premier-consul/</a>. Accessed 9 Nov. 2026.</p><p class="source-note">Portrait credit: historical painting by Gros, reproduced by Fondation Napoléon. It presents Napoleon as First Consul, the office he held when sending the expedition.</p></li><li id="source-archival-map"><p>Des Longchamps, Jacques François. <i>Carte de l’île de Saint Domingue</i>. Paris, 1780. <i>Library of Congress</i>. <a href="https://www.loc.gov/item/73695996/">https://www.loc.gov/item/73695996/</a>. Accessed 9 Nov. 2026.</p><p class="source-note">Archival map of Hispaniola, including an inset of Cap-Français. Predates the revolution; it cannot show the progress of the war. Public-domain historical map.</p></li></ol>
+
+            <details class="research-detail"><summary>How to read the sources</summary><p>The constitution is a primary source for legal goals and the distribution of power; it is not proof of daily practice. The archival map shows colonial geography in 1780, not troop movements during the revolution. Later portraits help us study how leaders were remembered, but should not be treated as photographs or certain likenesses.</p><p>The 2025 news reports document a dated debate about restitution. The dollar estimates measure different things, and the repayment dates depend on which debt is counted. Interpretations of success and the case for restitution are arguments based on the evidence, not claims that every historian agrees.</p></details></section>
+
+    </main>
+
+    <footer><a class="brand" href="#home">H / 1804</a>
+
+        <p>FREEDOM AT A PRICE<br>An exhibition by Jessie · Historical research and interpretation</p><a href="#home">Back to the entrance ↑</a>
+
+    </footer><noscript>
+
+        <style>
+
+            .leader-profile[hidden] {
+
+                display: grid !important
+
+            }
+
+        </style>
+
+        <div class="noscript">JavaScript is off. Read the continuous timeline below the map; the social cards,
+
+            historical analysis, and bibliography remain available.</div>
+
+    </noscript>
+
+</body>
+
+
+
+</html>
