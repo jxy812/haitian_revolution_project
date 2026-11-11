@@ -1,6 +1,6 @@
 # Haiti — Freedom at a Price
 
-An interactive historical exhibition by Jessie.
+An interactive historical exhibition by Jessie Xie.
 
 Open index.html directly or use VS Code Live Server. No build or installation is required. Keep the assets folder and scripts together.
 
